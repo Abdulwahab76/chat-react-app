@@ -8,7 +8,7 @@ class App extends React.Component {
         return (
             <div>
                 {/* <AppRouter /> */}
-                <h1>Hwllo WAHAB update</h1>
+                <h1>Hwllo WAHAB updated</h1>
             </div>
         );
     }
