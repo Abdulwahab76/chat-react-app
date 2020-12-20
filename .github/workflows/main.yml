@@ -26,10 +26,16 @@ jobs:
             # Runs a single command using the runners shell
             - name: setup Node.js environment
               uses: actions/setup-node@v2-beta
+            
               with:
                   version: 12.18.4
+            - name: GitHub Action for Yarn
+              uses: Borales/actions-yarn@v2.3.0
+              with:
+                  cmd: install
+                  
             - name: creating build
-              run: npm run build 
+              run: yarn build 
             - name: installing surge
               run: npm install -g surge
             - name: deploying on surge
