@@ -28,12 +28,6 @@ jobs:
               uses: actions/setup-node@v2-beta
               with:
                   version: 12.18.4
-            - name: GitHub Action for Npm
-              # Runs a set of commands using the runners shell
-              uses: Reedyuk/NPM-Version@1.0.1
-              with:
-                  cmd: install
-
             - name: creating build
               run: npm run build 
             - name: installing surge
